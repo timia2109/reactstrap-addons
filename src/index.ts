@@ -1,3 +1,3 @@
-import { TestComponent } from './components/TestComponent/TestComponent';
+import { SuggestionInput } from './components/SuggestionInput/SuggestionInput';
 
-export { TestComponent };
+export { SuggestionInput };

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-import { TestComponent } from './reactComponentLib';
+import { SuggestionInputTest } from './components/SuggestionInput/SuggestionInputTest';
 
 const StyledDiv = styled.div`
   padding: 10px;
@@ -13,8 +14,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <TestComponent text="Styled Component from React library" />
-        <StyledDiv>Example App styled component</StyledDiv>
+        <SuggestionInputTest />
       </div>
     );
   }
