@@ -7,6 +7,11 @@
         "url": "https://github.com/timia2109/reactstrap-addons",
         "type": "git"
     },
+    "author": {
+        "name": "Tim Ittermann",
+        "email": "timia2109@gmail.com",
+        "url": "https://timia2109.com",
+    },
     "license": "MIT",
     "types": "dist/index.d.ts",
     "devDependencies": {
