@@ -1,25 +1,43 @@
 {
     "name": "reactstrap-addons",
     "version": "1.0.0",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.esm.js",
     "repository": {
-        "url": "https://github.com/timia2109/reactstrap-addons",
-        "type": "git"
+        "type": "git",
+        "url": "https://github.com/timia2109/reactstrap-addons"
     },
+    "license": "MIT",
     "author": {
         "name": "Tim Ittermann",
         "email": "timia2109@gmail.com",
-        "url": "https://timia2109.com",
+        "url": "https://timia2109.com"
     },
-    "license": "MIT",
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "rollup -c",
+        "build-watch": "rollup -c -w",
+        "deploy-example": "cd example && npm run deploy",
+        "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
+        "postinstall": "install-peers -f && cd example && npm i",
+        "prepublishOnly": "npm run build",
+        "start-example": "cd example && npm start",
+        "pretest": "npm run build",
+        "test": "ts-node test/test.ts",
+        "test:lint": "eslint ./src/**/*.ts ./src/**/*.tsx ./example/src/**/*.ts ./example/src/**/*.tsx",
+        "test:lint:fix": "npm run test:lint -- --fix"
+    },
     "devDependencies": {
         "@types/react": "^16.9.13",
         "@types/react-dom": "^16.9.4",
+        "@types/reactstrap": "^8.2.0",
         "@types/styled-components": "^4.4.0",
         "@typescript-eslint/eslint-plugin": "^2.9.0",
         "@typescript-eslint/parser": "^2.9.0",
+        "bootstrap": "^4.4.1",
         "concurrently": "^5.0.0",
         "eslint": "^6.7.1",
         "eslint-config-prettier": "^6.7.0",
@@ -32,31 +50,13 @@
         "rollup-plugin-typescript2": "^0.25.2",
         "ts-node": "^8.5.2",
         "tslib": "^1.10.0",
-        "typescript": "^3.7.2",
-        "@types/reactstrap": "^8.2.0",
-        "bootstrap": "^4.4.1"
+        "typescript": "^3.7.2"
     },
     "peerDependencies": {
+        "moment": "2.24.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
-        "styled-components": "^4.4.1",
         "reactstrap": "^8.2.0",
-        "moment": "2.24.0"
-    },
-    "scripts": {
-        "build": "rollup -c",
-        "build-watch": "rollup -c -w",
-        "prepublishOnly": "npm run build",
-        "postinstall": "install-peers -f && cd example && npm i",
-        "start-example": "cd example && npm start",
-        "deploy-example": "cd example && npm run deploy",
-        "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
-        "test": "ts-node test/test.ts",
-        "pretest": "npm run build",
-        "test:lint": "eslint ./src/**/*.ts ./src/**/*.tsx ./example/src/**/*.ts ./example/src/**/*.tsx",
-        "test:lint:fix": "npm run test:lint -- --fix"
-    },
-    "files": [
-        "dist"
-    ]
+        "styled-components": "^4.4.1"
+    }
 }
