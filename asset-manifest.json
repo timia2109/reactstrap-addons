@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/reactstrap-addons/static/css/main.795991f2.chunk.css",
+    "main.js": "/reactstrap-addons/static/js/main.bc0f814b.chunk.js",
+    "main.js.map": "/reactstrap-addons/static/js/main.bc0f814b.chunk.js.map",
+    "runtime-main.js": "/reactstrap-addons/static/js/runtime-main.1a8c578a.js",
+    "runtime-main.js.map": "/reactstrap-addons/static/js/runtime-main.1a8c578a.js.map",
+    "static/css/2.83ace7dd.chunk.css": "/reactstrap-addons/static/css/2.83ace7dd.chunk.css",
+    "static/js/2.9958539f.chunk.js": "/reactstrap-addons/static/js/2.9958539f.chunk.js",
+    "static/js/2.9958539f.chunk.js.map": "/reactstrap-addons/static/js/2.9958539f.chunk.js.map",
+    "index.html": "/reactstrap-addons/index.html",
+    "precache-manifest.9692cf946afd1c855f2ba95a552c4e6b.js": "/reactstrap-addons/precache-manifest.9692cf946afd1c855f2ba95a552c4e6b.js",
+    "service-worker.js": "/reactstrap-addons/service-worker.js",
+    "static/css/2.83ace7dd.chunk.css.map": "/reactstrap-addons/static/css/2.83ace7dd.chunk.css.map",
+    "static/css/main.795991f2.chunk.css.map": "/reactstrap-addons/static/css/main.795991f2.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a8c578a.js",
+    "static/css/2.83ace7dd.chunk.css",
+    "static/js/2.9958539f.chunk.js",
+    "static/css/main.795991f2.chunk.css",
+    "static/js/main.bc0f814b.chunk.js"
+  ]
+}
