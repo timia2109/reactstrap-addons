@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { SuggestionInputTest } from './components/SuggestionInput/SuggestionInputTest';
+import { LoadingAlert } from './reactComponentLib';
+import { Container } from 'reactstrap';
 
 const StyledDiv = styled.div`
   padding: 10px;
@@ -11,13 +13,17 @@ const StyledDiv = styled.div`
 `;
 
 class App extends Component {
-  render() {
-    return (
-      <div>
-        <SuggestionInputTest />
-      </div>
-    );
-  }
+    render() {
+        return (
+            <Container>
+                <div>
+                    <SuggestionInputTest />
+                    <br />
+                    <LoadingAlert />
+                </div>
+            </Container>
+        );
+    }
 }
 
 export default App;
